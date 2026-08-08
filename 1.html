@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المدرسة</title>
+    <!-- يمكنك وضع تنسيقات صفحتك الأساسية هنا -->
+    <style>
+        body {
+            font-family: 'Cairo', Tahoma, sans-serif;
+            background-color: #f4f6f7;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .main-content {
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- محتوى الصفحة الأساسي -->
+    <div class="main-content">
+        <h1>مرحباً بكم في موقع المدرسة الثانوية</h1>
+        <p>هنا محتوى الصفحة الرئيسية الخاص بك...</p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- جدول الحصص والتنسيقات الخاصة به (في أسفل الصفحة) -->
+    <!-- ========================================== -->
+
+    <!-- تنسيقات الجدول الخاصة -->
+    <style>
+        .schedule-container {
+            max-width: 1000px;
+            margin: 40px auto 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            direction: rtl;
+            text-align: center;
+        }
+
+        .schedule-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .school-schedule {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .school-schedule th, 
+        .school-schedule td {
+            padding: 12px 10px;
+            border: 1px solid #e0e0e0;
+            font-size: 14px;
+        }
+
+        .school-schedule th {
+            background-color: #1abc9c;
+            color: #ffffff;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .school-schedule .day-cell {
+            background-color: #2c3e50;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .school-schedule .break-cell {
+            background-color: #f1c40f;
+            color: #2c3e50;
+            font-weight: bold;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            letter-spacing: 2px;
+        }
+
+        .school-schedule tbody tr:hover {
+            background-color: #f1f9f8;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+
+    <!-- هيكل الجدول -->
+    <div class="schedule-container">
+        <h2>جدول الحصص الدراسية - المرحلة الثانوية</h2>
+        <table class="school-schedule">
+            <thead>
+                <tr>
+                    <th>الحصة / اليوم</th>
+                    <th>الأولى<br>08:00 - 08:45</th>
+                    <th>الثانية<br>08:45 - 09:30</th>
+                    <th>الثالثة<br>09:30 - 10:15</th>
+                    <th>الفسحة<br>10:15 - 10:45</th>
+                    <th>الرابعة<br>10:45 - 11:30</th>
+                    <th>الخامسة<br>11:30 - 12:15</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="day-cell">الأحد</td>
+                    <td>رياضيات</td>
+                    <td>فيزياء</td>
+                    <td>لغة عربية</td>
+                    
+                    <td>إنجليزية</td>
+                    <td>تاريخ</td>
+                    <td>تربية بدنية</td>
+                </tr>
+                <tr>
+                    <td class="day-cell">الإثنين</td>
+                    <td>كيمياء</td>
+                    <td>رياضيات</td>
+                    <td>حاسب آلي</td>
+                    <td>لغة عربية</td>
+                    <td>أحياء</td>
+                    <td>تربية إسلامية</td>
+                </tr>
+                <tr>
+                    <td class="day-cell">الثلاثاء</td>
+                    <td>فيزياء</td>
+                    <td>إنجليزية</td>
+                    <td>رياضيات</td>
+                    <td>جغرافيا</td>
+                    <td>كيمياء</td>
+                    <td>فنون</td>
+                </tr>
+                <tr>
+                    <td class="day-cell">الأربعاء</td>
+                    <td>لغة عربية</td>
+                    <td>أحياء</td>
+                    <td>تربية إسلامية</td>
+                    <td>رياضيات</td>
+                    <td>فيزياء</td>
+                    <td>حاسب آلي</td>
+                </tr>
+                <tr>
+                    <td class="day-cell">الخميس</td>
+                    <td>إنجليزي</td>
+                    <td>رياضيات</td>
+                    <td>كيمياء</td>
+                    <td>لغة عربية</td>
+                    <td>نشاط طلابي</td>
+                    <td>توجيه وإرشاد</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
