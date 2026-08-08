@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+    line-height: 1.7;
+}
+
+.cv-container {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    padding: 40px 45px;
+    direction: rtl;
+}
+
+/* عنوان رئيسي */
+.name-title {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1a2a6c;
+    padding-bottom: 15px;
+}
+
+.name-title h1 {
+    font-size: 32px;
+    color: #1a2a6c;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.name-title p {
+    font-size: 16px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+/* كل قسم */
+.section {
+    margin-bottom: 22px;
+}
+
+.section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.section-header .code {
+    font-weight: bold;
+    color: #1a2a6c;
+    font-size: 16px;
+    min-width: 40px;
+}
+
+.section-header .title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1a2a6c;
+    border-bottom: 2px solid #1a2a6c;
+    padding-bottom: 2px;
+}
+
+.section-content {
+    padding-right: 48px;
+    font-size: 15px;
+    color: #222222;
+    text-align: right;
+}
+
+.section-content .sub-title {
+    font-weight: 600;
+    color: #0d1b3e;
+    margin-top: 5px;
+}
+
+.section-content ul {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.section-content ul li {
+    position: relative;
+    padding-right: 18px;
+    margin-bottom: 3px;
+}
+
+.section-content ul li::before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #1a2a6c;
+    font-weight: bold;
+}
+
+.inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+
+.inline-list span {
+    display: inline-block;
+    background-color: #eef2f7;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #1a2a6c;
+}
+
+.ref-item {
+    margin-bottom: 8px;
+}
+
+.ref-item strong {
+    color: #0d1b3e;
+    font-weight: bold;
+}
+
+hr {
+    margin: 18px 0 10px 0;
+    border: 0;
+    border-top: 1px dashed #cccccc;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+/* للطباعة أو الشاشات الصغيرة */
+@media (max-width: 600px) {
+    .cv-container {
+        padding: 20px 15px;
+    }
+    .section-content {
+        padding-right: 20px;
+    }
+    .inline-list {
+        gap: 4px 10px;
+    }
+}
+
+
