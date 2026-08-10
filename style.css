@@ -1,161 +1,94 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>السيرة الذاتية - حسن محمد حسن</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    background-color: #f2f2f2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
-    color: #222222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 30px 20px;
-    line-height: 1.7;
-}
+    <div class="cv-container">
+        <!-- زر الانتقال لصفحة المشروع والفيديو -->
+        <div class="top-nav">
+            <a href="page2.html" class="btn-link">الانتقال إلى صفحة المشروع (الفيديو والصورة والجدول) &larr;</a>
+        </div>
 
-.cv-container {
-    max-width: 1000px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-    padding: 40px 45px;
-    direction: rtl;
-}
+        <!-- الترويسة -->
+        <header class="cv-header">
+            <h1>حسن محمد حسن</h1>
+            <p>مطور برمجيات | مبتكر رقمي</p>
+        </header>
 
-/* عنوان رئيسي */
-.name-title {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #1a2a6c;
-    padding-bottom: 15px;
-}
+        <!-- 1.5 الخبرات العملية -->
+        <section class="cv-section">
+            <h2>1.5 - الخبرات العملية</h2>
+            <div class="experience-item">
+                <h3>برمجيات مطور - شركة مارس للابتكار الرقمي</h3>
+                <span class="date">ديسمبر 2018 - 2019</span>
+                <ul>
+                    <li>تطوير مواقع ويب تفاعلية باستخدام HTML, CSS, JavaScript</li>
+                    <li>العمل على تطبيقات قواعد البيانات وإدارتها</li>
+                    <li>المشاركة في تصميم واجهات المستخدم وتجربة الاستخدام</li>
+                </ul>
+            </div>
+        </section>
 
-.name-title h1 {
-    font-size: 32px;
-    color: #1a2a6c;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
+        <!-- 1.6 المهارات التقنية -->
+        <section class="cv-section">
+            <h2>1.6 - المهارات التقنية</h2>
+            <p><strong>لغات البرمجة:</strong> Python, Java, JavaScript, C++, HTML/CSS</p>
+            <p><strong>تطوير الويب:</strong> React, Node.js, Vue.js</p>
+            <p><strong>قواعد البيانات:</strong> MySQL, PostgreSQL, MongoDB</p>
+            <p><strong>أدوات أخرى:</strong> Git, Docker, Linux, REST APIs</p>
+        </section>
 
-.name-title p {
-    font-size: 16px;
-    color: #555555;
-    margin-top: 5px;
-}
+        <!-- 1.7 اللغات -->
+        <section class="cv-section">
+            <h2>1.7 - اللغات</h2>
+            <p><strong>العربية:</strong> اللغة الأم</p>
+            <p><strong>الإنجليزية:</strong> إجادة ممتازة (كاملة)</p>
+            <p><strong>الفرنسية:</strong> متوسط</p>
+        </section>
 
-/* كل قسم */
-.section {
-    margin-bottom: 22px;
-}
+        <!-- 1.8 الشهادات المهنية -->
+        <section class="cv-section">
+            <h2>1.8 - الشهادات المهنية</h2>
+            <ul>
+                <li>AWS Certified Solutions Architect – 2022</li>
+                <li>Google Developer Expert – 2021</li>
+                <li>Microsoft Azure Fundamentals – 2020</li>
+            </ul>
+        </section>
 
-.section-header {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    margin-bottom: 6px;
-}
+        <!-- 1.9 الدورات التدريبية -->
+        <section class="cv-section">
+            <h2>1.9 - الدورات التدريبية</h2>
+            <ul>
+                <li>دورة متقدمة في الذكاء الاصطناعي وتعلم الآلة – Coursera, 2022</li>
+                <li>تطوير تطبيقات الويب الحديثة – Udemy, 2021</li>
+                <li>ورشة عمل في الأمن السيبراني – المركز الوطني للأمن السيبراني, 2021</li>
+            </ul>
+        </section>
 
-.section-header .code {
-    font-weight: bold;
-    color: #1a2a6c;
-    font-size: 16px;
-    min-width: 40px;
-}
+        <!-- 1.10 الهوايات والاهتمامات -->
+        <section class="cv-section">
+            <h2>1.10 - الهوايات والاهتمامات</h2>
+            <p>البرمجة | القراءة التقنية | الرياضات | السفر | التصوير</p>
+        </section>
 
-.section-header .title {
-    font-weight: bold;
-    font-size: 18px;
-    color: #1a2a6c;
-    border-bottom: 2px solid #1a2a6c;
-    padding-bottom: 2px;
-}
+        <!-- 1.11 المراجع -->
+        <section class="cv-section">
+            <h2>1.11 - المراجع</h2>
+            <div class="ref-item">
+                <p><strong>أحمد الخالدي</strong> - مدير تقني، شركة التقنية المتقدمة</p>
+                <p>هاتف: +654398755966</p>
+            </div>
+            <div class="ref-item">
+                <p><strong>د. سارة المنصور</strong> - أستاذة علوم الحاسب، جامعة الملك سعود</p>
+                <p>بريد: sara.mansour@ksu.edu.sa</p>
+            </div>
+        </section>
+    </div>
 
-.section-content {
-    padding-right: 48px;
-    font-size: 15px;
-    color: #222222;
-    text-align: right;
-}
-
-.section-content .sub-title {
-    font-weight: 600;
-    color: #0d1b3e;
-    margin-top: 5px;
-}
-
-.section-content ul {
-    list-style: none;
-    padding-right: 10px;
-}
-
-.section-content ul li {
-    position: relative;
-    padding-right: 18px;
-    margin-bottom: 3px;
-}
-
-.section-content ul li::before {
-    content: "•";
-    position: absolute;
-    right: 0;
-    color: #1a2a6c;
-    font-weight: bold;
-}
-
-.inline-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 18px;
-}
-
-.inline-list span {
-    display: inline-block;
-    background-color: #eef2f7;
-    padding: 2px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    color: #1a2a6c;
-}
-
-.ref-item {
-    margin-bottom: 8px;
-}
-
-.ref-item strong {
-    color: #0d1b3e;
-    font-weight: bold;
-}
-
-hr {
-    margin: 18px 0 10px 0;
-    border: 0;
-    border-top: 1px dashed #cccccc;
-}
-
-.footer {
-    text-align: center;
-    font-size: 13px;
-    color: #888888;
-    margin-top: 5px;
-}
-
-/* للطباعة أو الشاشات الصغيرة */
-@media (max-width: 600px) {
-    .cv-container {
-        padding: 20px 15px;
-    }
-    .section-content {
-        padding-right: 20px;
-    }
-    .inline-list {
-        gap: 4px 10px;
-    }
-}
-
-
+</body>
+</html>
